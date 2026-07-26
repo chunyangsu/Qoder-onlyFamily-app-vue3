@@ -128,22 +128,22 @@ const handleSubmit = async () => {
 
 .form-container {
   margin: 24rpx;
-  background-color: #fff;
   border-radius: 16rpx;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .form-header {
-  padding: 32rpx 32rpx 16rpx;
   display: flex;
   flex-direction: column;
   gap: 8rpx;
+  padding: 32rpx 32rpx 16rpx;
 }
 
 .form-title {
   font-size: 40rpx;
-  color: #333;
   font-weight: 600;
+  color: #333;
 }
 
 .form-subtitle {

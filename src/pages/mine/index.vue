@@ -37,8 +37,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60rpx 0 40rpx;
   gap: 16rpx;
+  padding: 60rpx 0 40rpx;
 }
 
 .menu-list {
