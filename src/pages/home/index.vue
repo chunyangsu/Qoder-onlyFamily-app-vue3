@@ -9,18 +9,32 @@
       <wd-form ref="formRef" :model="formData" :schema="formSchema" error-type="message">
         <wd-cell-group border>
           <wd-form-item title="姓名" prop="name" required>
-            <wd-input v-model="formData.name" placeholder="请输入姓名" :clearable="true"
-              @blur="() => formRef?.validate('name')" />
+            <wd-input
+              v-model="formData.name"
+              placeholder="请输入姓名"
+              :clearable="true"
+              @blur="() => formRef?.validate('name')"
+            />
           </wd-form-item>
 
           <wd-form-item title="手机号" prop="phone" required>
-            <wd-input v-model="formData.phone" placeholder="请输入手机号" type="tel" :clearable="true" :maxlength="11"
-              @blur="() => formRef?.validate('phone')" />
+            <wd-input
+              v-model="formData.phone"
+              placeholder="请输入手机号"
+              type="tel"
+              :clearable="true"
+              :maxlength="11"
+              @blur="() => formRef?.validate('phone')"
+            />
           </wd-form-item>
 
           <wd-form-item title="邮箱" prop="email" required>
-            <wd-input v-model="formData.email" placeholder="请输入邮箱" :clearable="true"
-              @blur="() => formRef?.validate('email')" />
+            <wd-input
+              v-model="formData.email"
+              placeholder="请输入邮箱"
+              :clearable="true"
+              @blur="() => formRef?.validate('email')"
+            />
           </wd-form-item>
         </wd-cell-group>
       </wd-form>
@@ -35,6 +49,9 @@
         <wd-button type="warning" block size="large" :loading="submitting" @click="handleSubmit">
           提交3
         </wd-button>
+        <wd-button type="info" block size="large" :loading="submitting" @click="handleSubmit">
+          提交4
+        </wd-button>
       </view>
     </view>
   </view>
@@ -42,10 +59,7 @@
 
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
-import type {
-  FormSchema,
-  FormInstance,
-} from '@wot-ui/ui/components/wd-form/types'
+import type { FormSchema, FormInstance } from '@wot-ui/ui/components/wd-form/types'
 
 const formRef = ref<FormInstance>()
 const submitting = ref(false)

@@ -17,7 +17,8 @@ onHide(() => {
 <style lang="scss">
 page {
   background-color: #f5f5f5;
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
-    'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Microsoft YaHei', Arial, sans-serif;
 }
 </style>

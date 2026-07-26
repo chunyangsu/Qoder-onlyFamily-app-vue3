@@ -3,12 +3,7 @@
     <wd-navbar title="我的" />
     <view class="mine-content">
       <view class="user-info">
-        <wd-img
-          width="120"
-          height="120"
-          round
-          src="/static/logo.png"
-        />
+        <wd-img width="120" height="120" round src="/static/logo.png" />
         <wd-text text="用户昵称" size="18" color="#333" />
         <wd-text text="点击登录" size="12" color="#999" />
       </view>
